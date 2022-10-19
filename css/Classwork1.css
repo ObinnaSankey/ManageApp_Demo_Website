@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Rufina:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+.img{
+    grid-row: 1;
+}
+/* Responsive for Mobile */
+@media(max-width:800px){
+    .afterhero, .hero{
+        flex-direction: column;
+        background-color: blueviolet;
+    }
+}
+/* Responsive for Mobile Ends Here */
+.menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding-top: 15px;
+    box-shadow: 2px 7px 10px black;
+    position: absolute;
+}
+.navbar{
+    display: flex;
+    margin-left: 200px;
+    column-gap: 2.5rem;
+    padding-top: 13px;
+}
+.navbar a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar a:last-child{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+.navbar a:last-child:hover{
+    background-color: blue;
+}
+.hero{
+    width: 100%;
+    height: 515px;
+    background-color: lightgrey;
+    display: flex;
+    column-gap: 10rem;
+}
+.herotext{
+    margin-top: 90px;
+    margin-left: 300px;
+    display: block;
+    row-gap: 7rem;
+}
+.herotext p{
+    color: red;
+}
+.herotext h1{
+    color: darkblue;
+    font-family: 'Rufina', serif;
+}
+p{
+    text-align: justify;
+    width: 300px;
+}
+.btns a:first-child{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 8px;
+}
+.btns a:last-child{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 8px;
+}
+.btns a:hover{
+    background-color: black;
+}
+.img{
+    margin-bottom: 50px;
+}
+.afterhero{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    justify-content: right;
+    gap: 10rem;
+    padding-top: 80px;
+    margin-left: 100px;
+}
+.afterhero p{
+    text-align: center;
+    font-family: 'Rufina', serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
